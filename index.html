@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Zoho Form</title>
+    </head>
+    <style>
+        #heading1{
+            color: blue;
+        }
+.content {
+ display: grid;
+ align-items: center; 
+ grid-template-columns: 1fr 1fr;
+ column-gap: 8px;
+}
+.form{ color: black; font-size: large;
+    margin: 0% 25%;
+}
+#button1{
+    background-color: blue; color: black;text-align: center; font-size: large; padding: 5% 8%;
+}
+#button2{
+    background-color: white; color: black; font-size: medium;padding: 5% 10%;
+}
+#heading2{
+    color: rgb(3, 3, 70);
+}
+
+</style>
+
+<body>
+    <h1 id="heading1">Zoho.</h1>
+    <p>A cental hub where teams can work, plan,</p>
+    <p>and achieve amazing things together</p>
+            
+        <div class="content">
+         
+            <p> <img src="images/creators.jpg" alt="picture of a team holding hands" width="100%"></p>
+
+           <form class="form"> 
+            <label id="language">English</label>
+            <select>
+                <option>USA</option>
+                <option>UK</option>
+            </select>       
+        <br>
+        <p>START FOR FREE</p>
+        <h1 id="heading2">Sign up for free</h1>
+       <p> Already a member?<a href="/logIn.html"> Log In</a>
+        </p>
+        <label>Email</label>
+        <br>
+        <br>
+        <input type="email" placeholder=" Enter email e.g abc@email.com" />
+        <br>
+        <br>
+        <label>Password</label>
+        <br>
+        <input type="password" placeholder="6+ characters e.g dgh3@!gW">
+        <br>
+        <br>
+        <button id="button1">Create an Account</button>
+        <br>
+        <br>
+       <button id="button2">G Sign up with Google</button>
+    
+        </div>
+    </form>
+</body>
+</html>
