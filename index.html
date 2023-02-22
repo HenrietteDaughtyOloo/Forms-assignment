@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Zoho Form</title>
+    <link rel="stylesheet" href="style.css">
     </head>
     <style>
         #heading1{
@@ -16,11 +17,15 @@
  grid-template-columns: 1fr 1fr;
  column-gap: 8px;
 }
+
 .form{ color: black; font-size: large;
     margin: 0% 25%;
 }
+#email{
+    border: solid black 3px;
+}
 #button1{
-    background-color: blue; color: black;text-align: center; font-size: large; padding: 5% 8%;
+    background-color: blue; color: black;text-align: center; font-size: large; padding: 10% 10% 6%;
 }
 #button2{
     background-color: white; color: black; font-size: medium;padding: 5% 10%;
@@ -28,7 +33,12 @@
 #heading2{
     color: rgb(3, 3, 70);
 }
-
+img{ 
+    width: 100%;
+}
+#language{
+    padding: 3px 2px 4px 5px;
+}
 </style>
 
 <body>
@@ -38,11 +48,11 @@
             
         <div class="content">
          
-            <p> <img src="images/creators.jpg" alt="picture of a team holding hands" width="100%"></p>
+             <img src="images/creators.jpg" alt="picture of a team holding hands">
 
            <form class="form"> 
-            <label id="language">English</label>
-            <select>
+            <label>English</label>
+            <select id="language">
                 <option>USA</option>
                 <option>UK</option>
             </select>       
@@ -54,12 +64,12 @@
         <label>Email</label>
         <br>
         <br>
-        <input type="email" placeholder=" Enter email e.g abc@email.com" />
+        <input id="email" type="email" placeholder=" Enter email e.g abc@email.com" />
         <br>
         <br>
         <label>Password</label>
         <br>
-        <input type="password" placeholder="6+ characters e.g dgh3@!gW">
+        <input id="email" type="password" placeholder="6+ characters e.g dgh3@!gW">
         <br>
         <br>
         <button id="button1">Create an Account</button>
